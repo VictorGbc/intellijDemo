@@ -5,8 +5,6 @@ public class Cat {
     private String name;
     private String gender;
 
-    public Cat () {}
-
     public Cat (String name, String gender) {
         this.name = name;
         this.gender = gender;
@@ -26,5 +24,13 @@ public class Cat {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "name='" + name + '\'' +
+                ", gender='" + gender + '\'' +
+                '}';
     }
 }
